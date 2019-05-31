@@ -114,6 +114,7 @@ export default {
   margin: 10px;
   width: 97%;
   height: 50px;
+  border-radius: 10px;
 }
 
 #posts {
