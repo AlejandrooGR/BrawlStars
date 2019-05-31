@@ -1,0 +1,22 @@
+{
+    "short_name": "Brawl Stars",
+    "name": "Brawl Stars",
+    "icons": [
+        {
+            "src": "brawl.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "brawl.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "brawl.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ],
+    "start_url": "/Welcome"
+}
