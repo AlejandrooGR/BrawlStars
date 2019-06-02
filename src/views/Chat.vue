@@ -2,19 +2,21 @@
   <v-content class="bg1">
     <div>
       <div class="caja">
-        <h2>Chat</h2>
-        <v-btn class="login" fab color="blue" @click="login">
+        <h2 class="chat">BrawlChat</h2>
+        <v-btn class="login" fab color="white" @click="login">
           <!-- <v-icon color="blue">fas fa-gamepad</v-icon> -->
-          <v-icon color="white" size="20px">fas fa-users</v-icon>
+          <v-icon color="blue" size="20px">fas fa-user-edit</v-icon>
         </v-btn>
       </div>
       <v-flex class="sad">
         <div id="posts"></div>
       </v-flex>
-      <input id="textInput" placeholder="Your message here..." v-model="mensaje">
-      <v-btn class="send" outline fab color="blue" @click="writeNewPost">
-        <v-icon color="white" size="20px">fas fa-paper-plane</v-icon>
-      </v-btn>
+      <div class="caja123">
+        <input id="textInput" placeholder="Your message here..." v-model="mensaje">
+        <v-btn class="send" fab color="white" @click="writeNewPost">
+          <v-icon color="blue" size="25px">fas fa-paper-plane</v-icon>
+        </v-btn>
+      </div>
     </div>
   </v-content>
 </template>
@@ -108,6 +110,12 @@ export default {
   margin-top: 50px;
 }
 
+.caja123 {
+  display: flex;
+  margin-bottom: 40px;
+  margin-top: -15px;
+}
+
 #posts .ejemplo {
   background: aliceblue;
   font-size: 18px;
@@ -115,6 +123,14 @@ export default {
   width: 97%;
   height: 50px;
   border-radius: 10px;
+  padding: 13px;
+  font-family: "Lilita One", cursive;
+}
+
+.chat {
+  margin-left: 35px;
+  font-family: "Lilita One", cursive;
+  color: aliceblue;
 }
 
 #posts {
@@ -124,15 +140,35 @@ export default {
   margin-left: 9px;
 }
 
+.v-btn:before {
+  border-radius: inherit;
+  color: inherit;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  opacity: 0.12;
+  -webkit-transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+  width: 100%;
+  background-color: blue;
+}
+
 .send {
-  top: 0px;
+  top: -15px;
+  border-radius: 50%;
+  width: 20px;
+  height: 70px;
+  right: 20px;
 }
 
 .login {
-  left: 150px;
-  border-radius: 200px;
-  width: 50px;
-  height: 50px;
+  left: 100px;
+  border-radius: 50%;
+  width: 20px;
+  height: 70px;
+  top: -15px;
 }
 
 .bg1 {
@@ -208,6 +244,8 @@ html {
 }
 input {
   border-radius: 0;
+  font-family: "Lilita One", cursive;
+  top: -5px;
 }
 
 div[data-v-15964adc][data-v-15964adc] {
@@ -228,6 +266,9 @@ div[data-v-15964adc][data-v-15964adc] {
   margin-left: 20px;
   color: blanchedalmond;
   border: blue;
+  font-family: "Lilita One", cursive;
+  padding: 10px;
+  font-size: 22px;
 }
 
 .textInput-input::placeholder {

@@ -1,6 +1,6 @@
 <template>
-  <v-container class="bg" fill-height grid-list-md text-xs-center>
-    <v-layout row wrap align-center justify-center>
+  <v-container class="bg1">
+    <v-layout align-center justify-center>
       <v-flex xs8 offset-xs-2>
         <v-img
           src="https://vignette.wikia.nocookie.net/brawlstars/images/0/01/Brawl_Stars_Logo.png/revision/latest?cb=20190105214233&path-prefix=es"
@@ -12,8 +12,6 @@
             </v-layout>
           </template>
         </v-img>
-      </v-flex>
-      <v-flex xs8 offset-xs-2>
         <v-img
           src="https://brawlstarss.com/wp-content/uploads/2018/12/Brawl-Stars-101-Gu%C3%ADa-para-principiantes.png"
           lazy-src="https://brawlstarss.com/wp-content/uploads/2018/12/Brawl-Stars-101-Gu%C3%ADa-para-principiantes.png"
