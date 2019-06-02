@@ -264,7 +264,7 @@ div[data-v-15964adc][data-v-15964adc] {
   height: 38px;
   width: 250px;
   margin-left: 20px;
-  color: blanchedalmond;
+  color: aliceblue;
   border: blue;
   font-family: "Lilita One", cursive;
   padding: 10px;
@@ -272,12 +272,12 @@ div[data-v-15964adc][data-v-15964adc] {
 }
 
 .textInput-input::placeholder {
-  color: white;
+  color: aliceblue;
   font-weight: bold;
 }
 
 #textInput::placeholder {
-  color: blanchedalmond;
+  color: aliceblue;
   padding-left: 0px;
 }
 </style>

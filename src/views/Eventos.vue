@@ -167,6 +167,10 @@ export default {
   margin-top: 10px;
 }
 
+.fill-height {
+  height: 105%;
+}
+
 /* img1 {
   border-style: none;
   background: lightblue;
